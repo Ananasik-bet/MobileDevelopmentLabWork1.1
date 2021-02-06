@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mEo-uu-GQE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--_____-->
+        <scene sceneID="sBW-BU-QEq">
+            <objects>
+                <viewController id="H4e-Ma-H3W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tYJ-Fx-4t7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="72C-ch-wWF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="_____" image="trash" catalog="system" id="Eq4-FG-dLV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hK-zU-4MA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-384" y="-234"/>
+        </scene>
+        <!--Who am I-->
+        <scene sceneID="3XQ-6D-U7Z">
+            <objects>
+                <viewController id="ZAJ-qj-4D0" customClass="ViewController" customModule="Laboratore_work__1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="713-kI-3N1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KB-bv-nFr">
+                                <rect key="frame" x="128" y="417.5" width="158" height="61"/>
+                                <string key="text">Дяченко Владислав
+Група ІО-83
+ЗК ІО-8309</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wJz-p7-xGN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7KB-bv-nFr" firstAttribute="centerX" secondItem="713-kI-3N1" secondAttribute="centerX" id="2Vc-uo-jzZ"/>
+                            <constraint firstItem="7KB-bv-nFr" firstAttribute="centerY" secondItem="713-kI-3N1" secondAttribute="centerY" id="5ha-Gl-NMS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Who am I" image="person" catalog="system" id="x9c-rs-g66"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lue-QO-0VL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-384.05797101449281" y="-939.50892857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="iov-zt-y5m">
+            <objects>
+                <tabBarController id="mEo-uu-GQE" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EZh-Y3-bMO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZAJ-qj-4D0" kind="relationship" relationship="viewControllers" id="QgL-Da-mde"/>
+                        <segue destination="H4e-Ma-H3W" kind="relationship" relationship="viewControllers" id="LRF-Yc-9Xb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Plg-gO-y42" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1158" y="-591"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
